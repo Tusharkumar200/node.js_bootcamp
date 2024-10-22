@@ -1,0 +1,29 @@
+√ This is My Basic Notes File     
+
+ -> use the .env file to store the path to the notes file. This way you can easily change the path to the notes file without changing the code.
+ npm i dotenv
+  -> create a .env file in the root directory of the project and add the path to the notes file.
+  -> require('dotenv').config() in the app.js file to read the .env file and store the key-value pairs in the process.env object.
+ imort the dotenv package and use the config method to read the .env file and store the key-value pairs in the process.env object.
+ to access the path to the notes file, use the process.env object.
+
+
+ use mongoDB atlas for online database
+ use render for online server
+
+ Authentication:
+
+ To use a auth in a application use passport and passport-local library
+
+-> install bcrypt to store the data in a encrypted form
+
+
+JWT(JSON WEB TOKENS)
+
+-> definition: JWT is a standard for creating tokens that assert some number of claims. For example, a server could generate a token that has the claim "logged in as admin" and provide that to a client. The client could then use that token to prove that it is logged in as admin.
+
+-> Structure: JWT consist of three parts: Header, Payload, Signature. They are typically encoded and signed using cryptographic algorithms.
+
+-> Usage: JWT are commonly used for authentication and information exchange in web development. They are used to securely transmit information between parties.
+
+-> Statelessness : JWT are stateless, meaning that the server does not need to store any information about the client. This makes them ideal for use in distributed systems.
